@@ -1,3 +1,4 @@
 # Introduction
 
-Notes about Typescript 
+Sparse notes about Typescript
+
