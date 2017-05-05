@@ -1,26 +1,29 @@
 # General
 
-In TypeScript, each member is public by default and you can have only one constructor per class.  
-That is a departure from ES6 which allows one class to have more than one constructor as long as they have a different number of parameters.
+In TypeScript, each member is public by default and you can have only one constructor per class. That is a departure from ES6 which allows one class to have more than one constructor as long as they have a different number of parameters.
 
-When we add public or private accessibility to an argument of the constructor, that argument automatically becomes a member of the class with the relevant accessibility modifier.
+When we add _public _or _private _accessibility to an argument of the constructor, that argument automatically becomes a member of the class with the relevant accessibility modifier.
 
-`name?: string`   Name is optional  
+`name?: string`   Name is optional
 
+> self is really window.self  
+> If you're using a function in a different context, this will refer to that context, but self will still be window.
 
-self is really window.self  
-If you're using a function in a different context, this will refer to that context, but self will still be window.
+### Create a new type
 
-type CardinalDirection = "North" \| "East" \| "South" \| "West";
+`type CardinalDirection = "North" | "East" | "South" | "West";`
 
-interface Foo {  
+### Cast an object to a new type
+
+`interface Foo {  
     bar: number;  
     bas: string;  
 }  
-var foo = {} as Foo;
+var foo = {} as Foo;`
 
-readOnly vs const  
+### readOnly vs const
+
 The difference is that the value of a static readonly field is set at run time, and can thus be modified by the containing class, whereas the value of a const field is set to a compile time constant.
 
-readOnly: boolean \| 'nocursor';
+`readOnly: boolean | 'nocursor';`
 
