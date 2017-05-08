@@ -94,7 +94,7 @@ declare module 'Foo' {}
 ```
 
 
-Creates ambient module 'Foo', without quotes creates a namespace (only ambient modules can use quoted names)
+Creates ambient module 'Foo', without quotes creates a namespace (only ambient modules can use quoted names) (The quoted modules are ES6 modules)
 
 
 
