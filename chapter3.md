@@ -94,7 +94,7 @@ declare module 'Foo' {}
 ```
 
 
-Creates ambient module 'Foo', without quotes creates a namespace (only ambient modules can use quoted names) (The quoted modules are ES6 modules)
+Creates ambient module 'Foo', without quotes creates a namespace (only ambient modules can use quoted names, the quoted modules are ES6 modules). It's usage is specific to putting multiple external modules exports in one declaration file.
 
 
 
@@ -139,6 +139,28 @@ example
 ```
 declare namespace Foo {
     var t = 6; //error
+}
+```
+
+### Ambient Modules
+
+Ambient modules allows us to declare more than one module per file. We declare the module name in quotes and put the module inside brackets.
+
+/// fooBarBaz.d.ts
+
+
+
+```
+declare module "foo" {  
+    export class SomeClass {}
+}
+
+declare module "bar" {  
+    export class OtherClass {}
+}
+
+declare module "baz" {  
+    export class AnotherClass {}
 }
 ```
 
