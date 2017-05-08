@@ -75,7 +75,7 @@ Default export class and function declaration names are optional.
 Both CommonJS and AMD generally have the concept of an exports object which contains all exports from a module.TypeScript supports export = to model the traditional CommonJS and AMD workflow.The export = syntax specifies a single object that is exported from the module. When exporting a module using export =, TypeScript-specific import module = require("module") must be used to import the module.
 
 ### Namespaces
-Namespaces are handy for grouping together logically-related objects and types in the global scope. 
+Namespaces are handy for grouping together logically-related objects and types in the global scope. Using namespaces is not much more than some named global variables that contain the functions and variables. This can get confusing as you don't have any proper dependency structures. You need to take care of importing all files in the correct order for namespaces to work correctly.
  Modules, on the other hand, are already present in a file system, necessarily. We have to resolve them by path and filename, so there’s a logical organization scheme for us to use.
 Namespaces are important to avoid naming collisions in the global scope. For example, you might have My.Application.Customer.AddForm and My.Application.Order.AddForm – two types with the same name, but a different namespace. This, however, is not an issue with modules. Within a module, there’s no plausible reason to have two objects with the same name. From the consumption side, the consumer of any given module gets to pick the name that they will use to refer to the module, so accidental naming conflicts are impossible.
 
