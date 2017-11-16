@@ -31,6 +31,6 @@ The difference is that the value of a static readonly field is set at run time, 
 ### ReadonlyArray
 TypeScript comes with a ReadonlyArray<T> type that is the same as Array<T> with all mutating methods removed, so you can make sure you don’t change your arrays after creation:
     
-const arr: ReadonlyArray<number> = [1, 2, 3, 4];
+`const arr: ReadonlyArray<number> = [1, 2, 3, 4];`
 
 Use const or readonly, along with ReadonlyArray to make array immutable.
