@@ -47,7 +47,7 @@ Indexable types have an index signature that describes the types we can use to i
 
 `interface StringArray {
     [index: number]: string;
-}
+}`
 
-let myArray: StringArray;
-myArray = ["Bob", "Fred"];`
+`let myArray: StringArray;`
+`myArray = ["Bob", "Fred"];`
