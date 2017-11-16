@@ -34,3 +34,20 @@ TypeScript comes with a ReadonlyArray<T> type that is the same as Array<T> with 
 `const arr: ReadonlyArray<number> = [1, 2, 3, 4];`
 
 Use const or readonly, along with ReadonlyArray to make array immutable.
+
+### Function Types
+To describe a function type with an interface, we give the interface a call signature. This is like a function declaration with only the parameter list and return type given.
+
+`interface SearchFunc {
+    (source: string, subString: string): boolean;
+}`
+
+### Indexable Types
+Indexable types have an index signature that describes the types we can use to index into the object, along with the corresponding return types when indexing.
+
+`interface StringArray {
+    [index: number]: string;
+}
+
+let myArray: StringArray;
+myArray = ["Bob", "Fred"];`
