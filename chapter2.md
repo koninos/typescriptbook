@@ -50,4 +50,5 @@ Indexable types have an index signature that describes the types we can use to i
 }`
 
 `let myArray: StringArray;`
+
 `myArray = ["Bob", "Fred"];`
