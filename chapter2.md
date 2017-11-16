@@ -22,8 +22,15 @@ When we add _public _or _private _accessibility to an argument of the constructo
 var foo = {} as Foo;`
 
 ### readOnly vs const
+Reassignment of variable is not possible. But you can change properties of an object.
 
 The difference is that the value of a static readonly field is set at run time, and can thus be modified by the containing class, whereas the value of a const field is set to a compile time constant.
 
 `readOnly: boolean | 'nocursor';`
 
+### ReadonlyArray
+TypeScript comes with a ReadonlyArray<T> type that is the same as Array<T> with all mutating methods removed, so you can make sure you don’t change your arrays after creation:
+    
+const arr: ReadonlyArray<number> = [1, 2, 3, 4];
+
+Use const or readonly, along with ReadonlyArray to make array immutable.
