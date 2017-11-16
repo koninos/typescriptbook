@@ -15,11 +15,13 @@ When we add _public _or _private _accessibility to an argument of the constructo
 
 ### Cast an object to a new type
 
-`interface Foo {  
+```
+interface Foo {  
     bar: number;  
     bas: string;  
 }  
-var foo = {} as Foo;`
+var foo = {} as Foo;
+```
 
 ### readOnly vs const
 Reassignment of variable is not possible. But you can change properties of an object.
@@ -38,16 +40,20 @@ Use const or readonly, along with ReadonlyArray to make array immutable.
 ### Function Types
 To describe a function type with an interface, we give the interface a call signature. This is like a function declaration with only the parameter list and return type given.
 
-`interface SearchFunc {
+```
+interface SearchFunc {
     (source: string, subString: string): boolean;
-}`
+}
+```
 
 ### Indexable Types
 Indexable types have an index signature that describes the types we can use to index into the object, along with the corresponding return types when indexing.
 
-`interface StringArray {
+```
+interface StringArray {
     [index: number]: string;
-}`
+}
+```
 
 `let myArray: StringArray;`
 
