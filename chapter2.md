@@ -62,3 +62,8 @@ interface StringArray {
 ### Interfaces Extending Classes
 When an interface type extends a class type it inherits the members of the class but not their implementations. 
 Interfaces inherit even the private and protected members of a base class. This means that when you create an interface that extends a class with private or protected members, that interface type can only be implemented by that class or a subclass of it.
+
+### TypeScript is a structural type system
+When we compare two different types, regardless of where they came from, if the types of all members are compatible, then we say the types themselves are compatible.
+
+However, when comparing types that have private and protected members, we treat these types differently. 
