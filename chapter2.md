@@ -58,3 +58,7 @@ interface StringArray {
 `let myArray: StringArray;`
 
 `myArray = ["Bob", "Fred"];`
+
+### Interfaces Extending Classes
+When an interface type extends a class type it inherits the members of the class but not their implementations. 
+Interfaces inherit even the private and protected members of a base class. This means that when you create an interface that extends a class with private or protected members, that interface type can only be implemented by that class or a subclass of it.
