@@ -18,7 +18,7 @@ import "module-name";
 
 #### defaultExport
 
-Name that will refer to the default export from the module.
+Name that will refer to the default export from the module (one per module).
 
 #### module-name
 
