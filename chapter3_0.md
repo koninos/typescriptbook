@@ -3,7 +3,7 @@
 The import statement is used to import bindings which are exported by another module.
 
 
-##Syntax
+## Syntax
 ```
 import defaultExport from "module-name";
 import * as name from "module-name";
